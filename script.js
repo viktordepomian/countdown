@@ -1,6 +1,6 @@
 // Set the target date here (YYYY, MM-1, DD, HH, MM, SS)
 // Note: Month is 0-indexed (0 = January, 11 = December)
-const targetDate = new Date(2025, 11, 31, 23, 59, 59);
+const targetDate = new Date(2025, 4, 1, 12, 00, 00);
 
 // DOM elements
 const weeksEl = document.getElementById('weeks');
