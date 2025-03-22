@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.countdown-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-display {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: 300;
+    background: #fff;
+    border-radius: 4px;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.time-display.changed {
+    background-color: #f8f8f8;
+}
+
+.label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    color: #888;
+    font-weight: 400;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .time-display {
+        width: 100px;
+        height: 100px;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .time-display {
+        width: 90px;
+        height: 90px;
+        font-size: 2.5rem;
+    }
+    
+    .label {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .countdown-container {
+        gap: 1rem;
+    }
+    
+    .time-display {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+    
+    .label {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .countdown-container {
+        gap: 0.5rem;
+    }
+    
+    .time-display {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+    
+    .label {
+        font-size: 0.7rem;
+    }
+}
